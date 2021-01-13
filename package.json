@@ -1,0 +1,27 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass ./styles/style.scss style.css",
+    "watch:css": "onchange 'scss/*.scss' -- npm run build:css",
+    "start": "concurrently --kill-others \"live-server\" \"npm run watch:css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krantos-dev/Sass-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krantos-dev/Sass-Project/issues"
+  },
+  "homepage": "https://github.com/krantos-dev/Sass-Project#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "live-server": "^1.2.1",
+    "onchange": "^7.1.0",
+    "sass": "^1.32.4"
+  }
+}
